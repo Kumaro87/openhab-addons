@@ -21,10 +21,10 @@ package org.openhab.binding.gardena.internal.model.command;
 public class WateringManualOverrideCommand extends Command {
     private static final String COMMAND = "manual_override";
 
-    public WateringManualOverrideCommand(String durationInMinutes) {
+    public WateringManualOverrideCommand(String durationInSeconds) {
         super(COMMAND);
         parameters = new CommandParameters();
-        parameters.setDuration(durationInMinutes);
+        parameters.setDuration(durationInSeconds);
         parameters.setManualOverride("open");
     }
 }
